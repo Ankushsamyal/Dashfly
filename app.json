@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "dashFly",
+    "slug": "dashfly",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dashfly.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "dashFly uses your location to track your runs, rides, and other activities.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "dashFly needs background location to continue tracking your activity when the app is minimized.",
+        "NSMotionUsageDescription": "dashFly uses motion data to detect steps and cadence during activities.",
+        "NSCameraUsageDescription": "dashFly needs camera access to take profile photos.",
+        "NSPhotoLibraryUsageDescription": "dashFly needs photo library access to save activity screenshots and upload profile photos.",
+        "NSMicrophoneUsageDescription": "dashFly needs microphone access for audio cues during activities.",
+        "UIBackgroundModes": ["location", "fetch"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.dashfly.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACTIVITY_RECOGNITION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-location",
+      "expo-sensors",
+      "expo-image-picker",
+      "expo-notifications",
+      "expo-task-manager"
+    ],
+    "scheme": "dashfly"
+  }
+}
